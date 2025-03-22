@@ -46,7 +46,7 @@ fun ProductView(product: ProductModel){
 
             Column(modifier = Modifier.padding(start = 6.dp)) {
                 Text(text= product.name, fontSize = 18.sp)
-                Text(text= product.description ?: "Sin Descripción", fontSize = 10.sp, color = Color.Blue) // ? Puede o no tenerlo agregar : si llega a ser null agrega lo siguiente
+                Text(text= product.description ?: "Sin Descripción", fontSize = 10.sp, color = Color.Blue)
 
                 Text(text = "${product.price} MXN", fontSize = 18.sp)
 

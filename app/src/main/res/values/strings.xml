@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FirstProject</string>
+    <string name="start_message">Comenzar</string>
+    <string name="bienvenido_tendre_suerte">Bienvenido, ¿tendre suerte?</string>
 </resources>

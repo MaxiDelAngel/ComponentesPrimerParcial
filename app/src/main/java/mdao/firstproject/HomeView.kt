@@ -32,6 +32,8 @@ fun HomeView(navegar: NavController){
     ) {
         Text(text = "Hola")
 
+        Spacer(modifier = Modifier.height(20.dp))
+
         Button(onClick = {
             navegar.navigate("Botones")
         }) {
