@@ -29,7 +29,7 @@ fun ProductPreview(){
         name = "Tamales",
         description = null,
         price = 10.0f,
-        image = R.drawable.tamales
+        image = R.drawable.doge
     )
     ProductView(product)
 }

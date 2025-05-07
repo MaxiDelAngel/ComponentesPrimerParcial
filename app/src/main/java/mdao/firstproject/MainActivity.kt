@@ -1,5 +1,6 @@
 package mdao.firstproject
 
+import mdao.firstproject.Api.ui.viewmodel.DogViewModel
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -12,8 +13,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import mdao.firstproject.lazylist.view.SorteoView
-import mdao.firstproject.lazylist.viewmodels.StudentViewModel
+import mdao.firstproject.Api.ui.views.DogView
+import mdao.firstproject.Api.ui.views.DogsViews
 import mdao.firstproject.ui.theme.FirstProjectTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,11 +25,14 @@ class MainActivity : ComponentActivity() {
             FirstProjectTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Column(modifier = Modifier.padding(innerPadding)) {
+                        val dogViewModel = DogViewModel()
+                        DogsViews(dogViewModel)
+                        //dogViewModel.mostrarImagen()
                         //val studentViewModel: StudentViewModel = StudentViewModel()
                         //NavigationManager()
-                        //ListProductsView()
+                        //ListProdu ctsView()
                         //SorteoView(studentViewModel)
-                        DataStoreView()
+                        //DataStoreView()
                     }
                 }
             }
